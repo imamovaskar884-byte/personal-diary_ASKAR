@@ -1,0 +1,106 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.search-form {
+    margin-top: 10px;
+}
+
+.search-form input {
+    padding: 5px;
+    border-radius: 4px;
+    border: none;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+.entry-card {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    background-color: #fafafa;
+}
+
+.entry-card h3 {
+    margin-top: 0;
+}
+
+.date {
+    color: #777;
+    font-size: 0.9em;
+}
+
+.actions {
+    margin-top: 10px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 8px 15px;
+    margin-right: 5px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-danger {
+    background-color: #f44336;
+}
+
+.btn-secondary {
+    background-color: #ccc;
+    color: #333;
+}
+
+.entry-form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.entry-form input, 
+.entry-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    margin-top: 20px;
+}

@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block content %}
+<article class="entry-detail">
+    <h2>{{ entry.title }}</h2>
+    <p class="date">{{ entry.date }}</p>
+    <div class="content">
+        {{ entry.content | replace('\n', '<br>') | safe }}
+    </div>
+    <div class="actions">
+        <a href="/edit/{{ entry.id }}" class="btn">Редактировать</a>
+        <form action="/delete/{{ entry.id }}" method="POST" style="display:inline;">
+            <button type="submit" class="btn btn-danger" onclick="return confirm('Удалить запись?')">Удалить</button>
+        </form>
+        <a href="/" class="btn">На главную</a>
+    </div>
+</article>
+{% endblock %}

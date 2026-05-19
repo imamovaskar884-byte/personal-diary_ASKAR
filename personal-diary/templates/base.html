@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Личный дневник</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Личный дневник</h1>
+        <nav>
+            <a href="/">Главная</a>
+            <a href="/add">Новая запись</a>
+        </nav>
+        <form action="/search" method="GET" class="search-form">
+            <input type="text" name="q" placeholder="Поиск по заголовкам...">
+            <button type="submit">Найти</button>
+        </form>
+    </header>
+
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Личный дневник. Автор: Ваше Имя</p>
+    </footer>
+</body>
+</html>
